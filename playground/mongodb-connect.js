@@ -8,9 +8,9 @@ MongoClient.connect("mongodb://localhost:27017/ToDoApp", (err,client) => {
   }
   console.log("Success!Connected to MongoDB server")
   const db = client.db("ToDoApp")
-  //CRUD(create,retrive,update,delete)
+  //CRUD(create,read,update,delete)
 
-  //write(creating)
+  //create
   /*db.collection("ToDos").insertOne({
     text: "Something to do",
     completed: false
@@ -22,7 +22,7 @@ MongoClient.connect("mongodb://localhost:27017/ToDoApp", (err,client) => {
     console.log("Success!Inserted this one: " + JSON.stringify(res.ops,undefined,2))
   })*/
 
-  //read(retriving)
+  //read
   /*db.collection("ToDos").find({completed: false}).toArray().then((docs) => {
     console.log(JSON.stringify(docs,undefined,2))
   }, (err) => {
