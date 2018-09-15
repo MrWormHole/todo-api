@@ -4,8 +4,12 @@
   "description": "Simple todo API with node.js backend",
   "main": "server.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "mocha server/**/*.test.js",
     "test-watch" : "nodemon  --exec \"npm test\""
+  },
+  "engines":{
+    "node" : "8.5.0"
   },
   "author": "Talha Altınel",
   "license": "ISC",
