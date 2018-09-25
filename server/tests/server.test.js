@@ -20,7 +20,7 @@ beforeEach((done) => {
   })
 })
 
-/*describe("POST /todos" , () => {
+describe("POST /todos" , () => {
   it("should create a new todo" , (done) => {
     var text = "MY TEST TEXT"
 
@@ -140,7 +140,7 @@ describe("Delete /todos/:id" , () => {
         .expect(404)
         .end(done)
       })
-})*/
+})
 
 describe("Patch /todos/:id" , () => {
   it("should update the todo" , (done) => {
@@ -178,10 +178,4 @@ describe("Patch /todos/:id" , () => {
       })
       .end(done)
   })
-
-
-
-
-
-
 })
