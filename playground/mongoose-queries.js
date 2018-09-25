@@ -4,7 +4,7 @@ const { mongoose } = require("./../server/db/mongoose")
 const { Todo } = require("./../server/models/todo")
 const { User } = require("./../server/models/user")
 
-var id = "5b9527a91afde56413c21bf9"
+//var id = "5b9527a91afde56413c21bf9"
 
 /*Todo.find({
   _id: id
@@ -34,3 +34,11 @@ Todo.findOne({
 
   console.log(JSON.stringify(user,undefined,2))
 }).catch((e) => console.log(e))*/
+
+//deletes all data
+/*Todo.remove({}).then( (result) => {
+  console.log(result)
+})*/
+
+//Todo.findOneAndRemove
+//Todo.findByIdAndRemove
