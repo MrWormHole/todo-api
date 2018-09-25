@@ -14,6 +14,12 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json())
 
+app.get("/",(req,res) => {
+  setTimeout( () => {
+    res.status(200).redirect('/todos')
+  }, 500)
+})
+
 app.post("/todos" , (req,res) => {
   var todo = new Todo({
     text : req.body.text
